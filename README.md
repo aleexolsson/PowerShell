@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/aleexolsson/PowerShell">
-    <img src="images/powershell.png" alt="Logo" width="80" height="80">
+    <img src="images/powershell.png" alt="Logo">
   </a>
 
   <h3 align="center">PowerShell</h3>
@@ -33,8 +33,6 @@
 * [Acknowledgements](#acknowledgements)
 
 ## About The Project
-
-![Screen Shot](images/screenshot.png)
 
 This repository is just being used as a library for all my PowerShell scripts (or at least the ones that can be used outside of NDA's and such things)
 
