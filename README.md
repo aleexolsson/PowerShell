@@ -54,9 +54,18 @@ To get a local copy up and running follow these simple example steps.
 * Clone the repository
 * Modify the scripts to fit your use.
 
-### Installation
+### Description
 
-There is no installation really, all you need to do is run the scripts that you want to use.
+RemoveUser:
+This Script removes a Windows user account from a computer by using the Remove-CimInstance command. It prompts the user to enter a username, asks a second time before removing the user account.
+
+Apart from removing the user from the computer and removing the account folder from C:\Users\ there is also an option to remove a folder if you have a seperate folder with the users username.
+
+Translate SID to Username:
+This script is really simple that it prompts the user to enter a SID, and if that SID is found on the computer, then it translates it to a Windows username by using the System.Security.Principal.SecurityIdentifier command.
+
+ADUserReport:
+This script is used to export an excel-file containing Usernames, Description, AccountExpirationDates, WhenChanged and Enabled Status and also emails it to anyone. It requires some configuration to send an email.
 
 ## Roadmap
 
@@ -68,7 +77,6 @@ Contributions are what make the open source community such an amazing place to b
 * If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/aleexolsson/PowerShell/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/aleexolsson/PowerShell/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Creating A Pull Request
 
