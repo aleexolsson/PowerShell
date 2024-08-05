@@ -67,6 +67,9 @@ This script is really simple that it prompts the user to enter a SID, and if tha
 ADUserReport:
 This script is used to export an excel-file containing Usernames, Description, AccountExpirationDates, WhenChanged and Enabled Status and also emails it to anyone. It requires some configuration to send an email.
 
+ChangePrinterDriver:
+This script was written for Citrix enviroments to change the driver of a printer for a specific user, enter the name of the printer apart from the sessionnumber, because it changes with each login. If the user dosen't have administrator priviliges, a service account with administrator priviliges needs to be created. Then a task in task scheduler needs to be created with user logon trigger and a 30 second delay.
+
 ## Roadmap
 
 See the [open issues](https://github.com/aleexolsson/PowerShell/issues) for a list of proposed features (and known issues).
