@@ -41,8 +41,8 @@ Most of the scripts have been created using bits and bobs from various other scr
 
 
 
-* [ChatGPT](chat.openai.com)
-* [stackoverflow](stackoverflow.com)
+* [ChatGPT](https://chatgpt.com)
+* [stackoverflow](https://stackoverflow.com)
 
 ## Getting Started
 
