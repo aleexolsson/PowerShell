@@ -70,6 +70,9 @@ This script is used to export an excel-file containing Usernames, Description, A
 ChangePrinterDriver:
 This script was written for Citrix enviroments to change the driver of a printer for a specific user, enter the name of the printer apart from the sessionnumber, because it changes with each login. If the user dosen't have administrator priviliges, a service account with administrator priviliges needs to be created. Then a task in task scheduler needs to be created with user logon trigger and a 30 second delay.
 
+ChangePrinter:
+This script was also written for Citrix enviroments to change the standard printer upon login of a specific user, enter the name of the printer without the sessionnumber. And just like with the ChangePrinterDriver script, if the user doesn't have administrator priviliges, a service account with administrator priviliges needs to be created. Then a task in tas scheduler needs to be created with user login trigger and a 15-30 second delay.
+
 RemoveOldFiles:
 This script does exactly what the name suggests. It removes files in a folder older than X days. The only configuration it needs is the name of the folder it will be working in, as well as it needs a number for the max age of files in the folder at line 9.
 
