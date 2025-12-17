@@ -1,0 +1,1 @@
+This script does exactly what the name suggests. It removes files in a folder older than X days. The only configuration it needs is the name of the folder it will be working in, as well as it needs a number for the max age of files in the folder at line 9.

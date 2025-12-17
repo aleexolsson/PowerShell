@@ -1,3 +1,5 @@
+# C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Unrestricted -File "C:\HISS\ChangePrinterDriver (ta ej bort)\ChangePrinter.ps1"
+
 $printerPartialName = "xx\[UPD:PDF\] \(from x\) in session "
 $userName = "xxxxxx"  # Change to the right username
 

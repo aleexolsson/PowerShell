@@ -40,7 +40,7 @@ function RemoveUser {
 Add-Type -AssemblyName Microsoft.VisualBasic
 
 $UserName = [Microsoft.VisualBasic.Interaction]::InputBox('Enter the username of the User you wish to remove', 'UserName', "$env:UserName")
-$UsrNm = 'xx.xxxxx.xx\' + $UserName # Enter domain
+$UsrNm = 'htdfarm\' + $UserName # Enter domain
 Write-Host $UsrNm
 
 $confirmResult = [System.Windows.Forms.MessageBox]::Show("Are you sure you want to remove the user $UsrNm ?", "Confirm removal", "YesNo", "Warning")

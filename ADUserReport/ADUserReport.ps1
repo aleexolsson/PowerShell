@@ -33,7 +33,7 @@ $Email = @{
     Subject = 'ADUserReport'
     Body = "See attached file"
     Priority = 'Normal'
-    SmtpServer = 'FQDN might not work so it could require IP addres'
+    SmtpServer = 'FQDN or IP address of your SMTP server'
     Attachments = $ExcelFilePath
 }
 

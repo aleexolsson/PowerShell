@@ -1,0 +1,5 @@
+ChangePrinterDriver:
+This script was written for Citrix enviroments to change the driver of a printer for a specific user, enter the name of the printer apart from the sessionnumber, because it changes with each login. If the user dosen't have administrator priviliges, a service account with administrator priviliges needs to be created. Then a task in task scheduler needs to be created with user logon trigger and a 30 second delay.
+
+ChangePrinter:
+This script was also written for Citrix enviroments to change the standard printer upon login of a specific user, enter the name of the printer without the sessionnumber. The user cannot have an Applocker for Powershell, since a serviceaccount can't change this property for another user. Then a task in tas scheduler needs to be created with user login trigger and a 15-30 second delay.
