@@ -38,7 +38,7 @@
   Optional. Delimiter between samAccountName and date. Default: ';'
 
 .NOTES
-  The script compares only the date portion (no time-of-day). It clears AccountExpirationDate when enabling.
+  The script compares only the date portion (no time-of-day). It can clear AccountExpirationDate when enabling. Uncheck line 254 if desired.
 #>
 
 [CmdletBinding()]
