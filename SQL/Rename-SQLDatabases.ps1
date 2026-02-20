@@ -1,5 +1,5 @@
 <#
-  Author: Alex Olsson https://github.com/alexolsson/PowerShell
+  Author: Alex Olsson https://github.com/aleexolsson/PowerShell/tree/master/SQL
   Rename SQL databases + physical and logical files
   Auto-detects DB + DB(20xx)
   Fully sanitized output parsing
