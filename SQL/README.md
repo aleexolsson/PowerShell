@@ -9,6 +9,29 @@ including both physical and logical file names. It supports a primary database
 
 <hr>
 
+<h2>📌 Example Usage</h2>
+
+<p>Run the script with a custom old database name, new name, and SQL Server instance:</p>
+
+<pre>
+.\Rename-SQLDatabases.ps1 -OldBase "MyDB" -NewBase "MyDB_New" -SqlServer "server.fqdn" -DryRun
+</pre>
+
+<p>
+The <code>-DryRun</code> flag performs a full simulation:<br>
+• All databases are detected<br>
+• All rename operations are calculated<br>
+• No physical files or SQL metadata is changed<br>
+</p>
+
+<p>When you're satisfied with the DryRun output, run the real operation:</p>
+
+<pre>
+.\Rename-SQLDatabases.ps1 -OldBase "MyDB" -NewBase "MyDB_New" -SqlServer "server.fqdn"
+</pre>
+
+<hr>
+
 <h2>🚀 What the Script Does</h2>
 
 <h3>1. Auto-detects target databases</h3>
