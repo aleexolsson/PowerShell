@@ -4,7 +4,7 @@
   Auto-detects DB + DB(20xx)
   Fully sanitized output parsing
   Safe string handling (no $_ in strings)
-  Supports -DryRun (only)
+  Supports -DryRun (for testing)
   Logical file rename ALWAYS enabled
 #>
 
