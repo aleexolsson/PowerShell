@@ -39,6 +39,23 @@ The account running the script needs Write userAccountControl access to enable a
 Use the guide for the DEU script to Delegate access.
 
 RemoveUser:
-This Script removes a Windows user account from a computer by using the Remove-CimInstance command. It prompts the user to enter a username, asks a second time before removing the user account.
+This script removes a Windows user account from a computer by using the Remove-CimInstance command. It prompts the user to enter a username, asks a second time before removing the user account.
 
 Apart from removing the user from the computer and removing the account folder from C:\Users\ there is also an option to remove a folder if you have a seperate folder with the users username.
+
+DuplicateUsers:
+This script scans Active Directory to fins cases where multiple user accounts share the same value of an attribute (set to extensionAttributeX here). When such duplicates exist, the script evaluates each group and performs the following actions:
+1. If all accounts in the duplicate group are disabled:
+	No changes are made. The group is simply reported as a remaining duplicate.
+2. If at least one account in the group is enabled:
+	* The script identifies the oldest account (based on whenCreated).
+	* If the oldest account is disabled, the script automatically clears its extensionAttributeX value.
+	* If the oldest account is enabled, no action is taken.
+3. After handling all groups, if any duplicates still remain (after the logic above), the script sends a HTML-formatted email report.
+	The report lists:
+	* The usernames involved
+	* Whether they are enabled or disabled
+	* When the accounts were created
+	* When they were last modified
+4. The value of the attribute is not included in logs or in the email report.
+5. Logging is disabled by default, and only becomes active if the script is run with the -Log parameter(It only logs in the console).
