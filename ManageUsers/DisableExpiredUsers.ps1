@@ -20,7 +20,7 @@ if ($expiredUsers.Count -eq 0) {
     exit
 }
 
-# === Diable users and log ===
+# === Disable users and log ===
 foreach ($user in $expiredUsers) {
     $logEntry = "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Disabling user: $($user.SamAccountName)"
     Write-Host $logEntry
