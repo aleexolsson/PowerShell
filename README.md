@@ -33,7 +33,7 @@
 
 ## About The Project
 
-This repository is just being used as a library for all my PowerShell scripts (or at least the ones that can be used outside of NDA's and such things)
+This repository is just being used as a library for all my PowerShell scripts
 
 Most of the scripts have been created using bits and bobs from various other scripts and then bodged together using ChatGPT.
 
